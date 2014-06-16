@@ -6,6 +6,9 @@ Calaca is a simple, easy to use search client for ElasticSearch. It's made for y
   - Looks good
   - Minimum configs required
 
+
+![calaca-screenshot](https://s3.amazonaws.com/calaca/calaca.png "Calaca screenshot")
+
 Dependencies
 ----
   - angular.js
