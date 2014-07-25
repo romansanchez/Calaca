@@ -1,6 +1,6 @@
 /*
  * Calaca
- * Simple search client for ElasticSearch
+ * Simple search client for Elasticsearch
  * https://github.com/romansanchez/Calaca
  * Author - Roman Sanchez
  * http://romansanchez.me
@@ -32,7 +32,7 @@ body {
   text-align: center;
   padding-top: 70px;
 }
-.searchBoxContainer {
+.search-box-container {
   width: 860px;
   height: 69px;
   margin-left: auto;
@@ -40,7 +40,7 @@ body {
   margin-top: 60px;
   border-radius: 5px;
 }
-.searchBox {
+.search-box {
   width: 812px;
   height: 100%;
   color: #000;
@@ -69,7 +69,7 @@ body {
 /* Header */
 
 /* Results */
-.resultsContainer {
+.results-container {
   height: 100%;
   width: 100%;
   padding-top: 30px;
@@ -87,6 +87,9 @@ body {
   background-color: #fff;
   border-radius: 5px;
 }
+/* Results */
+
+/* Result */
 .result {
   margin-bottom: 10px;
   padding: 10px;
@@ -97,5 +100,5 @@ body {
   color: #ed4877;
   margin-bottom: 5px;
 }
-/* Results */
+/* Result */
 

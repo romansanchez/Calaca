@@ -15,7 +15,7 @@ var indexName = "name";
 var docType = "type";
 var maxResultsSize = 10;
 var host = "localhost";
-var port = "9200";
+var port = 9200;
 
 /* Module */
 window.Calaca = angular.module('calaca', ['elasticsearch'],
@@ -92,7 +92,6 @@ Calaca.controller('calacaCtrl', ['calacaService', '$scope', '$location', functio
                 }
             });
         };
-
 
     }]
 );

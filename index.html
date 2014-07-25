@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
     <meta charset='utf-8'>
-    <title>Calaca | Simple search client for ElasticSearch</title>
+    <title>Calaca | Simple search client for Elasticsearch</title>
     <link rel='stylesheet' href='css/reset.css'>
     <link rel='stylesheet' href='css/calaca.css'>
     <!--[if IE]>
@@ -14,13 +14,13 @@
 <!-- Title and search box -->
 <header class="jumbotron">
   <h1 class="title">Calaca</h1>
-  <div class="searchBoxContainer">
-    <input type='text' class="searchBox" placeholder="Search" autofocus ng-model='query' ng-change="search()">
+  <div class="search-box-container">
+    <input type='text' class="search-box" placeholder="Search" autofocus ng-model='query' ng-change="search()">
   </div>
 </header>
 
 <!-- Listing of search results -->
-<main class="resultsContainer">
+<main class="results-container">
   <section class='results'>
     <p class='no-results' ng-hide='results.length'>No Results</p>
     <article class='result' ng-cloak ng-repeat='result in results track by $id(result)'>
