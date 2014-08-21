@@ -1,12 +1,12 @@
 Calaca
 =========
 
-Calaca is a simple, easy to use search client for Elasticsearch. It's made for you if all you need to do is quick searches for your documents and don't need anything fancy or hard to setup, use. 
+Calaca is a simple, easy to use search client for Elasticsearch. It's made for you if all you need to do is quick searches for your documents and don't need anything fancy or hard to setup, use.
   - Quick, easy and instant search
   - Looks good
   - Minimum configs required
 
-
+Also, if you find it useful please star it! Thanks. 
 ![calaca-screenshot](https://s3.amazonaws.com/calaca/calaca.png "Calaca screenshot")
 
 Dependencies(Already included)
