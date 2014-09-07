@@ -6,7 +6,6 @@ Calaca is a simple, easy to use search client for Elasticsearch. It's made for y
   - Looks good
   - Minimum configs required
 
-Also, if you find it useful please star it! Thanks. 
 
 Demo
 =========
