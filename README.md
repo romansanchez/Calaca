@@ -7,6 +7,9 @@ Calaca is a simple, easy to use search client for Elasticsearch. It's made for y
   - Minimum configs required
 
 Also, if you find it useful please star it! Thanks. 
+
+Demo
+=========
 ![calaca-demo](https://s3.amazonaws.com/calaca/calaca-demo.gif "Calaca demo")
 
 Dependencies(Already included)
