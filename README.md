@@ -7,7 +7,7 @@ Calaca is a simple, easy to use search client for Elasticsearch. It's made for y
   - Minimum configs required
 
 Also, if you find it useful please star it! Thanks. 
-![calaca-screenshot](https://s3.amazonaws.com/calaca/calaca.png "Calaca screenshot")
+![calaca-demo](https://s3.amazonaws.com/calaca/calaca-demo.gif "Calaca demo")
 
 Dependencies(Already included)
 ----
@@ -19,10 +19,10 @@ Get Started
 In **calaca.js** change the configs to match your Elasticsearch cluster. 
 ```js
 /* Configs */
-var indexName = "name";
-var docType = "type";
+var indexName = "name"; //Ex: twitter
+var docType = "type"; //Ex: tweet
 var maxResultsSize = 10;
-var host = "localhost";
+var host = "localhost"; //Ex: http://ec2-123-aws.com
 var port = 9200;
 ```
 
