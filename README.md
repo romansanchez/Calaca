@@ -1,11 +1,12 @@
 Calaca
 =========
 
-Calaca is a simple, easy to use search client for Elasticsearch. It's made for you if all you need to do is quick searches for your documents and don't need anything fancy or hard to setup, use.
+Calaca is a beautiful, easy to use, search UI for Elasticsearch. It's made for you if you need to do quick searches for your documents and don't need anything hard to setup, use.
   - Quick, easy and instant search
   - Looks good
   - Minimum configs required
-
+  - Displays hits count and time taken for query
+  - Supports pagination
 
 Demo
 =========
@@ -14,11 +15,12 @@ Demo
 Dependencies(Already included)
 ----
   - angular.js
+  - angular-animate.js
   - elasticsearch.angular.js
 
 Get Started
 ----
-In **calaca.js** change the configs to match your Elasticsearch cluster. 
+In **config.js** change the configs to match your Elasticsearch cluster. 
 ```js
 /* Configs */
 var indexName = "name"; //Ex: twitter
@@ -50,11 +52,10 @@ You can easily change the look and feel of Calaca by implementing the below CSS 
 Version
 ----
 
-1.0.1
+1.1.0
 
 Author
 ----
-Roman Sanchez
 
 [romansanchez.me]
 

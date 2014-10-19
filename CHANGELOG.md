@@ -1,9 +1,10 @@
 # Changelog
 
-## 1.1.0 - Oct 18 2014
-- Add Pagination
-- Add time taken for query
-- Add hits count for query
+## 1.1.0 - Oct 19 2014
+- Add pagination
+- Add time taken and hits count for query
+- Add bower.json
+- Split js files
 
 ## 1.0.1 - Jul 24 2014
 - Add documentation to show how to configure results. 

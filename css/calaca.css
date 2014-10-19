@@ -1,12 +1,10 @@
 /*
- * Calaca
- * Simple search client for Elasticsearch
+ * Calaca - Search UI for Elasticsearch
  * https://github.com/romansanchez/Calaca
- * Author - Roman Sanchez
  * http://romansanchez.me
  * @rooomansanchez
  * 
- * v1.0.1
+ * v1.1.0
  * MIT License
  */
 
@@ -80,12 +78,47 @@ body {
   font-size: 25px;
   padding: 10px;
 }
+.results-info {
+  width: 860px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#response-details{
+  float: left;
+}
+#pagination-details {
+  float: right;
+}
 .results {
   width: 860px;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
   border-radius: 5px;
+}
+.pagination-controls {
+  width: 860px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.pager {
+  height: 30px;
+  width: 75px;
+  border-radius: 25px;
+  background-color: #ed4877;
+  border: none;
+  color: #fff;
+  margin: 5px;ch
+}
+.pager:hover {
+  cursor: pointer;
+  background-color: #d62256;
+}
+.pager:focus {
+  outline:0;
 }
 /* Results */
 
@@ -102,3 +135,28 @@ body {
 }
 /* Result */
 
+/* ng-repeat animation */
+.result.ng-enter, 
+.result.ng-leave, 
+.result.ng-move {
+  -webkit-transition: .5s linear all;
+  transition: .5s linear all;
+  position:relative;
+}
+.result.ng-enter {
+  left:-10px;
+  opacity:0;
+}
+.result.ng-enter.ng-enter-active {
+  left:0;
+  opacity:1;
+}
+.result.ng-leave {
+  left:0;
+  opacity:1;
+}
+.result.ng-leave.ng-leave-active {
+  left:-10px;
+  opacity:0;
+}
+/* ng-repeat animation */
