@@ -4,7 +4,7 @@
  * http://romansanchez.me
  * @rooomansanchez
  * 
- * v1.1.0
+ * v1.1.1
  * MIT License
  */
 
@@ -17,7 +17,7 @@ Calaca.factory('calacaService', ['$q', 'esFactory', '$location', function($q, el
 
     var client = elasticsearch({ host: esProtocol + '://' + esHost + ":" + port });
 
-    var search = function(term, mode, offset){
+    var search = function(query, mode, offset){
 
         var deferred = $q.defer();
 
@@ -28,8 +28,8 @@ Calaca.factory('calacaService', ['$q', 'esFactory', '$location', function($q, el
                     "size": maxResultsSize,
                     "from": offset,
                     "query": {
-                        "match": {
-                            "_all": term
+                        "query_string": {
+                            "query": query
                         }
                     }
                 }

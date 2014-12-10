@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.1 - Dec 9, 2014
+- Add support for lucene queries
+- Add support for specifying protocol
+- Bug fix for port config
+
 ## 1.1.0 - Oct 19 2014
 - Add pagination
 - Add time taken and hits count for query

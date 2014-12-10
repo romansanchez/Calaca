@@ -4,7 +4,7 @@
  * http://romansanchez.me
  * @rooomansanchez
  * 
- * v1.1.0
+ * v1.1.1
  * MIT License
  */
 

@@ -7,6 +7,7 @@ Calaca is a beautiful, easy to use, search UI for Elasticsearch. It's made for y
   - Minimum configs required
   - Displays hits count and time taken for query
   - Supports pagination
+  - Full support for lucene queries(boolean, range, etc)
 
 Demo
 =========
@@ -26,7 +27,7 @@ In **config.js** change the configs to match your Elasticsearch cluster.
 var indexName = "name"; //Ex: twitter
 var docType = "type"; //Ex: tweet
 var maxResultsSize = 10;
-var host = "localhost"; //Ex: http://ec2-123-aws.com
+var host = "localhost"; //Ex: ec2-123-aws.com
 var port = 9200;
 var protocol = ""; //Default: same as browser
 ```
@@ -53,7 +54,7 @@ You can easily change the look and feel of Calaca by implementing the below CSS 
 Version
 ----
 
-1.1.0
+1.1.1
 
 Author
 ----
