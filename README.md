@@ -63,7 +63,6 @@ Author
 
 [@rooomansanchez]
 
-Need Elasticsearch cluster monitoring and alerting? Check out [Pulse].
 
 
 License
