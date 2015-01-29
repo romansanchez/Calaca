@@ -59,8 +59,6 @@ Version
 Author
 ----
 
-[romansanchez.me]
-
 [@rooomansanchez]
 
 
