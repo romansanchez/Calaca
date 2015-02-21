@@ -34,10 +34,13 @@ Calaca.factory('calacaService', ['$q', 'esFactory', '$location', function($q, el
                     }
                 }
         }).then(function(result) {
-                var i = 0, hitsIn, hitsOut = [];
+
+                var i = 0, hitsIn, hitsOut = [], source;
                 hitsIn = (result.hits || {}).hits || [];
                 for(;i < hitsIn.length; i++){
-                    hitsOut.push(hitsIn[i]._source);
+                    source = hitsIn[i]._source;
+                    source._id = hitsIn[i]._id;
+                    hitsOut.push(source);
                 }
                 deferred.resolve({ timeTook: result.took, hitsCount: result.hits.total, hits: hitsOut });
         }, deferred.reject);
