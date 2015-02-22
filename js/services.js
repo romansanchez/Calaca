@@ -40,6 +40,9 @@ Calaca.factory('calacaService', ['$q', 'esFactory', '$location', function($q, el
                 for(;i < hitsIn.length; i++){
                     source = hitsIn[i]._source;
                     source._id = hitsIn[i]._id;
+                    source._index = hitsIn[i]._index;
+                    source._type = hitsIn[i]._type;
+                    source._score = hitsIn[i]._score;
                     hitsOut.push(source);
                 }
                 deferred.resolve({ timeTook: result.took, hitsCount: result.hits.total, hits: hitsOut });
