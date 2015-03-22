@@ -61,7 +61,9 @@ Author
 
 [@rooomansanchez]
 
-
+Feature requests
+----
+open an issue
 
 License
 ----
