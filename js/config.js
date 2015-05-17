@@ -15,7 +15,7 @@
  * index_name - Index name or comma-separated list
  * type - Type
  * size - Number of results to display at a time when pagination is enabled.
- * search_delay - Delay between actual search request. Reduces number of queries to cluster by not making a request on each keystroke. 
+ * search_delay - Delay between actual search request in ms. Reduces number of queries to cluster by not making a request on each keystroke. 
  */
 
 var CALACA_CONFIGS = {

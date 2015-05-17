@@ -29,7 +29,7 @@ url: "http://localhost:9200" //Cluster http url
 index_name: "twitter" //Index name or comma-separated list
 type: "tweet" //Type
 size: 10 //Number of results displayed at a time
-search_delay: 500 //Delay between actual search request
+search_delay: 500 //Delay between actual search request in ms
 ```
 
 In **index.html** append to ```result.``` the field name you want to show from your es document.
