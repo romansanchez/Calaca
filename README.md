@@ -41,10 +41,13 @@ Using dot notation, you can access nested fields like such ```result.transaction
 
 Plugin
 ----
-You can also install as an elasticsearch plugin. Same config updates are required to **config.js** and **index.html**.
+You can also install as an elasticsearch plugin from elasticsearch home directory. Same config updates are required to **config.js** and **index.html**.
 ```bash
-bin/plugin -i romansanchez/Calaca
+bin/plugin -i romansanchez/calaca
 ```
+
+Should now be accessible by opening url below. 
+```http://localhost:9200/_plugin/calaca/```
 
 Styling
 ----
