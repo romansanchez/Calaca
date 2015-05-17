@@ -47,7 +47,8 @@ bin/plugin -i romansanchez/calaca
 ```
 
 Should now be accessible by opening url below. 
-```http://localhost:9200/_plugin/calaca/```
+**http://your-host:9200/_plugin/calaca/**
+
 
 Styling
 ----
