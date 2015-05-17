@@ -46,8 +46,7 @@ You can also install as an elasticsearch plugin from elasticsearch home director
 bin/plugin -i romansanchez/calaca
 ```
 
-Should now be accessible by opening url below. 
-**http://your-host:9200/_plugin/calaca/**
+Should now be accessible by opening url: http://your-host:9200/_plugin/calaca/
 
 
 Styling
