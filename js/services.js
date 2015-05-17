@@ -4,28 +4,32 @@
  * http://romansanchez.me
  * @rooomansanchez
  * 
- * v1.1.1
+ * v1.2.0
  * MIT License
  */
 
 /* Service to Elasticsearch */
 Calaca.factory('calacaService', ['$q', 'esFactory', '$location', function($q, elasticsearch, $location){
 
-    //Set defaults if host and port aren't configured
-    var esHost = (host.length > 0 ) ? host : $location.host();
-    var esProtocol = (protocol.length > 0 ) ? protocol : $location.protocol();
+    //Set default url if not configured
+    CALACA_CONFIGS.url = (CALACA_CONFIGS.url.length > 0)  ? CALACA_CONFIGS.url : $location.protocol() + '://' +$location.host() + ":9200";
 
-    var client = elasticsearch({ host: esProtocol + '://' + esHost + ":" + port });
+    var client = elasticsearch({ host: CALACA_CONFIGS.url });
 
     var search = function(query, mode, offset){
 
         var deferred = $q.defer();
 
+        if (query.length == 0) {
+            deferred.resolve({ timeTook: 0, hitsCount: 0, hits: [] });
+            return deferred.promise;
+        }
+
         client.search({
-                "index": indexName,
-                "type": docType,
+                "index": CALACA_CONFIGS.index_name,
+                "type": CALACA_CONFIGS.type,
                 "body": {
-                    "size": maxResultsSize,
+                    "size": CALACA_CONFIGS.size,
                     "from": offset,
                     "query": {
                         "query_string": {

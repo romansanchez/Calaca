@@ -4,7 +4,7 @@
  * http://romansanchez.me
  * @rooomansanchez
  * 
- * v1.1.1
+ * v1.2.0
  * MIT License
  */
 
@@ -22,6 +22,15 @@ Calaca.controller('calacaCtrl', ['calacaService', '$scope', '$location', functio
         $scope.offset = 0;
 
         var paginationTriggered;
+        var maxResultsSize = CALACA_CONFIGS.size;
+        var searchTimeout;
+
+        $scope.delayedSearch = function(mode) {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(function() {
+                $scope.search(mode)
+            }, CALACA_CONFIGS.search_delay);
+        }
 
         //On search, reinitialize array, then perform search and load results
         $scope.search = function(m){

@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.0 - May 17, 2015
+- Add support for delayed searches
+- Simplify configs
+- Plugin support
+- Update documentation
+- Bug fixes/cleanup
+
 ## 1.1.1 - Dec 9, 2014
 - Add support for lucene queries
 - Add support for specifying protocol

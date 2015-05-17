@@ -4,14 +4,24 @@
  * http://romansanchez.me
  * @rooomansanchez
  * 
- * v1.1.1
+ * v1.2.0
  * MIT License
  */
 
 /* Configs */
-var indexName = "name"; //Ex: twitter
-var docType = "type"; //Ex: tweet
-var maxResultsSize = 10;
-var host = "localhost"; //Ex: http://ec2-123-aws.com
-var port = 9200;
-var protocol = ""; //Default: same as browser
+/**
+ *
+ * url - Cluster http url
+ * index_name - Index name or comma-separated list
+ * type - Type
+ * size - Number of results to display at a time when pagination is enabled.
+ * search_delay - Delay between actual search request. Reduces number of queries to cluster by not making a request on each keystroke. 
+ */
+
+var CALACA_CONFIGS = {
+	url: "",
+	index_name: "",
+	type: "",
+	size: 10,
+	search_delay: 500
+}

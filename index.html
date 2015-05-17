@@ -15,14 +15,14 @@
 <header class='jumbotron'>
   <h1 class='title'>Calaca</h1>
   <div class='search-box-container'>
-    <input type='text' class='search-box' placeholder='Search' autofocus ng-model='query' ng-change='search(0)'>
+    <input type='text' class='search-box' placeholder='Search' autofocus ng-model='query' ng-change='delayedSearch(0)'>
   </div>
 </header>
 
 <!-- Listing of search results -->
 <main class='results-container'>
   <section class='results-info'>
-    <p id='response-details'>{{(hits | number) || 0}} {{resultsString || 'results'}} ({{timeTook || 0}}ms)</p>
+    <p id='response-details'>{{(hits | number) || 0}} {{resultsLabel || 'results'}} ({{(timeTook || 0)}}ms)</p>
     <p ng-show='paginationEnabled()' id='pagination-details'>Showing {{paginationLowerBound}} - {{paginationUpperBound}}</p>
   </section>
   <section class='results'>
