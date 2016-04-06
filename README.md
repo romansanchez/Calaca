@@ -80,7 +80,7 @@ Author
 Contributors 
 ----
 
-[xros][https://github.com/xros]
+[xros](https://github.com/xros)
 
 
 License
