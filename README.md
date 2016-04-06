@@ -42,8 +42,10 @@ Using dot notation, you can access nested fields like such ```result.transaction
 Plugin
 ----
 You can also install as an elasticsearch plugin from elasticsearch home directory. Same config updates are required to **config.js** and **index.html**.
+
+Here it supports ElasticSearch version 2.x
 ```bash
-bin/plugin -i romansanchez/calaca
+bin/plugin install romansanchez/calaca
 ```
 
 Should now be accessible by visiting url: http://your-host:9200/_plugin/calaca/
@@ -68,12 +70,17 @@ Common Issues
 Version
 ----
 
-1.2.0
+1.2.1
 
 Author
 ----
 
 [@rooomansanchez]
+
+Contributors 
+----
+
+[xros](https://github.com/xros)
 
 
 License
