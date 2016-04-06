@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1 - Apr 7, 2016 -- Alexander Liu https://github.com/xros
+- Add support for ElasticSearch 2.x
+- Add a new branch 2.x
+
 ## 1.2.0 - May 17, 2015
 - Add support for delayed searches
 - Simplify configs
