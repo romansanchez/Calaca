@@ -65,7 +65,7 @@ You can easily change the look and feel of Calaca by implementing the below CSS 
 Common Issues
 ----
 * No 'Access-Control-Allow-Origin' header is present on the requested resource.
- * Add ```http.cors.enabled: true``` to your ```elasticsearch.yml```
+ * Add ```http.cors.enabled: true``` and  ```http.cors.allow-origin: "*"```  to your ```elasticsearch.yml```
 
 Version
 ----
