@@ -33,14 +33,14 @@ Calaca.factory('calacaService', ['$q', 'esFactory', '$location', function($q, el
                 }
         }).then(function(result) {
 
-                // console.log(result)
+                console.log(result)
                 var i = 0, hitsIn, hitsOut = [], source;
                 hitsIn = (result.hits || {}).hits || [];
                 for(;i < hitsIn.length; i++){
                     s = {
+                        index: i,
                         _id: hitsIn[i]._id,
-                        author: hitsIn[i]._source.author,
-                        text: hitsIn[i]._source.text.substring(0, 200) + '...',
+                        text: hitsIn[i]._source.text.substring(0, 100) + '...',
                     }
                     hitsOut.push(s);
                 }

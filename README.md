@@ -1,4 +1,12 @@
 Calaca
+
+使用方法：
+1. 修改 `_site/js/config.js` 文件中的 url 变量，改成当前 ElasticSearch 的地址
+2. 如何运行？
+    进入 `_site/` 目录，可以看到 `index.html` 文件。
+    如果你有安装 chrome 浏览器，可以在终端使用 `google-chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security index.html`
+    命令运行 UI。(MAC 和 Linux 应该都可以用)
+
 =========
 
 Calaca is a beautiful, easy to use, search UI for Elasticsearch. It's made for you if you need to do quick searches for your documents and don't need anything hard to setup, use.

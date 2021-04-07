@@ -23,6 +23,11 @@
 
 <!-- Listing of search results -->
 <main class='results-container' ng-cloak>
+    <section>
+        <button ng-click='getRadioBoxesValue(results, query)'>
+            Get result
+        </button>
+    </section>
     <section class='results-info'>
         <p id='response-details'>{{(hits | number) || 0}} {{resultsLabel || 'results'}} ({{(timeTook || 0)}}ms)</p>
         <p ng-show='paginationEnabled()' id='pagination-details'>Showing {{paginationLowerBound}} -
@@ -32,7 +37,15 @@
         <p class='no-results' ng-show='!results.length && !loading'>No Results</p>
         <article class='result' ng-repeat='result in results track by $id(result)'>
             <div>
-                <h2>{{result._id}}</h2> <h3>{{result.author}}</h3>
+                <a href="{{result._id}}">{{result._id}}</a>
+            </div>
+            <div>
+                <input type="radio" id="{{result.index}}-0" name="{{result.index}}" value="0">
+                <label for="{{result.index}}-0">non-relevant: 0</label>
+                <input type="radio" id="{{result.index}}-1" name="{{result.index}}" value="1">
+                <label for="{{result.index}}-1">relevant: 1</label>
+                <input type="radio" id="{{result.index}}-2" name="{{result.index}}" value="2">
+                <label for="{{result.index}}-2">very relevant: 2</label>
             </div>
             <p>{{result.text}}</p>
         </article>
@@ -46,6 +59,7 @@
 <!-- Load resources -->
 <script src='bower_components/angular-animate/angular-animate.min.js' type='text/javascript'></script>
 <script src='bower_components/elasticsearch/elasticsearch.angular.min.js' type='text/javascript'></script>
+<script src='bower_components/file-saver/dist/FileSaver.min.js' type='text/javascript'></script>
 <script src='js/config.js' type='text/javascript'></script>
 <script src='js/app.js' type='text/javascript'></script>
 <script src='js/controllers.js' type='text/javascript'></script>

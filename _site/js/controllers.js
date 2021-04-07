@@ -49,6 +49,33 @@ Calaca.controller('calacaCtrl', ['calacaService', '$scope', '$location', functio
             $scope.loadResults(m);
         };
 
+        $scope.getRadioBoxesValue = function (results, query) {
+            let res = ''
+            let id = 1;
+            if (query === 'difference between weather and climate') {
+                id = 1;
+            } else if (query === 'sea rise predictions') {
+                id = 2;
+            } else if (query === 'human impact on climate') {
+                id = 3;
+            }
+            for (let i = 0; i < 200; i++) {
+                let ele = document.getElementsByName(i);
+                for (let j = 0; j < 3; j++) {
+                    if (ele.item(j).checked) {
+                        const s = id + ' BenYe ' + results[i]._id + ' ' + j + '\n';
+                        res += s;
+                        break;
+                    }
+                }
+            }
+
+            const file_name = 'result.txt';
+            const fileToSave = new Blob([res], {type: 'text/plain', name: file_name})
+
+            saveAs(fileToSave, file_name)
+        }
+
         //Load search results into array
         $scope.loadResults = function(m) {
             results.search($scope.query, m, $scope.offset).then(function(a) {

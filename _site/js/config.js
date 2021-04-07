@@ -19,8 +19,8 @@
  */
 
 var CALACA_CONFIGS = {
-	url: "localhost:9200",
+	url: "https://elastic:7lErqi7N00pGNzr0B4xYstHu@i-o-optimized-deployment-ff5954.es.westus2.azure.elastic-cloud.com:9243",
 	index_name: "climate_change",
-	size: 100,
+	size: 200,
 	search_delay: 500
 }
