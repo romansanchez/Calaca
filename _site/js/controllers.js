@@ -59,11 +59,12 @@ Calaca.controller('calacaCtrl', ['calacaService', '$scope', '$location', functio
                     $scope.results.push(a.hits[i]);
                 }
 
+                console.log(a)
                 //Set time took
                 $scope.timeTook = a.timeTook;
 
                 //Set total number of hits that matched query
-                $scope.hits = a.hitsCount;
+                $scope.hits = a.hits.length;
 
                 //Pluralization
                 $scope.resultsLabel = ($scope.hits != 1) ? "results" : "result";

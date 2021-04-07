@@ -19,9 +19,8 @@
  */
 
 var CALACA_CONFIGS = {
-	url: "",
-	index_name: "",
-	type: "",
-	size: 10,
+	url: "localhost:9200",
+	index_name: "climate_change",
+	size: 100,
 	search_delay: 500
 }
